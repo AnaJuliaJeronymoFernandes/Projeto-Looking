@@ -23,7 +23,7 @@
                     <div class="concluido"> 
                         <!-- -->
                         
-                    <img src="../assets/img/ezgif.com-video-to-mp4.mp4" ata-gifffer="image.gif" class="imgconcluido" alt="Ok">
+                    <img src="../assets/img/erro4.png" ata-gifffer="image.gif" class="imgconcluido" alt="Ok">
                     <br>
                     <br>
                     <p>Cadastro/Login não realizado. Confira alguns dos possíveis erros e tente novamente:</p>
