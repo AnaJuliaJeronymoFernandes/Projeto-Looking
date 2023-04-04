@@ -27,8 +27,8 @@
             <h2>Bruna</h2>
             <a href="meuperfil.php"><span class="material-symbols-outlined">person</span>Perfil</a>
             <a href="favoritos.php"><span class="material-symbols-outlined">star</span>Favoritos</a>
-            <a href=""><span class="material-symbols-outlined">checkroom</span>Cadastrar Loja</a>
-            <a href=""><span class="material-symbols-outlined">settings</span>Configurações</a>
+            <a href="cadastroLoja.php"><span class="material-symbols-outlined">checkroom</span>Cadastrar Loja</a>
+            <a href="configuracoes.php"><span class="material-symbols-outlined">settings</span>Configurações</a>
             <a href="logout.php" id="sair"><span class="material-symbols-outlined">logout</span>Sair</a>
             </div>
         </div>
