@@ -40,7 +40,6 @@
                 <div class="post-header">
                     <img src="../assets/img/Ana.jpeg">
                     <p>Ana Julia Jeronymo</p>
-                    <ion-icon name="add-circle-outline"></ion-icon>
                 </div>
                 <div class="post-image">
                     <img src="../assets/img/boneVermelho.jpg">
@@ -70,7 +69,6 @@
                 <div class="post-header">
                     <img src="../assets/img/Gabriel.jpg">
                     <p>Gabriel Albino</p>
-                    <ion-icon name="add-circle-outline"></ion-icon>
                 </div>
                 <div class="post-image">
                     <img src="../assets/img/blusaPreta.jpg">
@@ -100,7 +98,6 @@
                 <div class="post-header">
                     <img src="../assets/img/Lara.jpeg">
                     <p>Lara Valentim</p>
-                    <ion-icon name="add-circle-outline"></ion-icon>
                 </div>
                 <div class="post-image">
                     <img src="../assets/img/calcaAzul.jpg">
