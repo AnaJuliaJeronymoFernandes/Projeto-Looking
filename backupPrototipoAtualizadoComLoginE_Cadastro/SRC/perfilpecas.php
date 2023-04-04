@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Looking</title>
 </head>
@@ -18,12 +18,12 @@
                 </label>
             </div>
             <div class="navbar-logo">
-                <a href="inicio.html">
-                    <img src="assets/img/LookingMenu.png" alt="Looking" class="logo">
+                <a href="inicio.php">
+                    <img src="../assets/img/LookingMenu.png" alt="Looking" class="logo">
                 </a>
             </div>
             <div class="pesquisa">
-                <form action="resultadobusca.html">
+                <form action="resultadobusca.php">
                     <input type="text" name="pesquisa" placeholder="Buscar..."/>
                     <button type="submit">
                         <span class="material-symbols-outlined">search</span>
@@ -35,13 +35,13 @@
     <main class="perfilpecas">
         <div class="sidebar ajeitaSidebar">
             <div class="conteudo">
-            <img src="assets/img/Bruna.jpg" class="image" alt="">
+            <img src="../assets/img/Bruna.jpg" class="image" alt="">
             <h2>Bruna</h2>
-            <a href="perfilpecas.html"><span class="material-symbols-outlined">person</span>Perfil</a>
-            <a href="favoritos.html"><span class="material-symbols-outlined">star</span>Favoritos</a>
+            <a href="perfilpecas.php"><span class="material-symbols-outlined">person</span>Perfil</a>
+            <a href="favoritos.php"><span class="material-symbols-outlined">star</span>Favoritos</a>
             <a href=""><span class="material-symbols-outlined">checkroom</span>Cadastrar Loja</a>
             <a href=""><span class="material-symbols-outlined">settings</span>Configurações</a>
-            <a href="index.html" id="sair"><span class="material-symbols-outlined">logout</span>Sair</a>
+            <a href="../public/index.php" id="sair"><span class="material-symbols-outlined">logout</span>Sair</a>
             </div>
         </div>
         <div class="cabecalho">
@@ -51,7 +51,7 @@
                         <button class="btnazul" onclick="">Editar Perfil</button>
                     </div>
                     <div class="imgperfil">
-                        <img src="assets//img/Bruna.jpg" alt="imagem de perfil">
+                        <img src="../assets/img/Bruna.jpg" alt="imagem de perfil">
                         <h2>Bruna Hamada</h2>
                     </div>
                     <div class="contatos">
@@ -69,14 +69,14 @@
                 </div>
                 <div class="pecas">
                     <div class="peca1">
-                        <img src="assets/img/converse.jpg" alt="converse">
+                        <img src="../assets/img/converse.jpg" alt="converse">
                     </div>
                     <div class="peca2">
-                        <img src="assets/img/vestido.jpg" alt="bermuda">
+                        <img src="../assets/img/vestido.jpg" alt="bermuda">
                     </div>
                 </div>
         </div>  
     </main>
-    <script src="assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
