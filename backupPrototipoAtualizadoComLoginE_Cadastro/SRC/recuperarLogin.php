@@ -1,7 +1,7 @@
 <?php
 
-	$email = $_POST["email"];
-    $senha = $_POST["senha"];
+	$email = $_POST["Email"];
+    $senha = $_POST["Senha"];
 
 	if(!empty(trim($email)) && !empty(trim($senha))) {
 
