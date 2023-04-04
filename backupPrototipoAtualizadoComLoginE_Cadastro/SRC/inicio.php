@@ -17,29 +17,9 @@
     <title>Looking</title>
 </head>
 <body class="inicio">
-    <header class="logado">
-        <nav class="navbar ajeitaNavBar">
-            <div class="iconemenu">
-                <input type="checkbox" id="check">
-                <label for="check">
-                <span class="material-symbols-outlined">menu</span>
-                </label>
-            </div>
-            <div class="navbar-logo">
-                <a href="inicio.php">
-                    <img src="../assets/img/LookingMenu.png" alt="Looking" class="logo">
-                </a>
-            </div>
-            <div class="pesquisa">
-                <form action="../resultadobusca.php">
-                    <input type="text" name="pesquisa" placeholder="Buscar..."/>
-                    <button type="submit">
-                        <span class="material-symbols-outlined">search</span>
-                    </button>
-                </form>
-            </div>
-        </nav>
-    </header>
+    <?php
+    include("../include/cabecalhoMenu.php");
+?>
     <main class="inicio">
         <div class="sidebar ajeitaSidebar">
             <div class="conteudo">
@@ -156,4 +136,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+    <?php
+        include("../include/rodape.php");
+    ?>
 </html>
