@@ -49,13 +49,13 @@
 					mysqli_free_result($resultado);
 					mysqli_stmt_close($stmt);
 					mysqli_close($conexao);
-					header("location: ../inicio.php");
+					header("location: inicio.php");
 				}
 				else {
 					mysqli_free_result($resultado);
 					mysqli_stmt_close($stmt);
 					mysqli_close($conexao);
-					header("location: ../erro.html");
+					header("location: erro.php");
 				}
 			}
 			//$resultado nao existe a partir daqui
@@ -71,6 +71,6 @@
 		}
 	}
 	else {
-		header("location: ../erro.html");
+		header("location: erro.php");
 	}
 ?>
