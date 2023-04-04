@@ -58,7 +58,7 @@
                     </div>
                     <div class="post-actions">
                         <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="arrow-redo-outline"></ion-icon>
+                        <a href="urlCompartilhar.php"><ion-icon name="arrow-redo-outline"></ion-icon></a>
                     </div>
                 </div>
             </div>
