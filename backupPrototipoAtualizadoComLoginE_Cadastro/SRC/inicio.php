@@ -58,7 +58,6 @@
                     </div>
                     <div class="post-actions">
                         <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="chatbubbles-outline"></ion-icon>
                         <ion-icon name="arrow-redo-outline"></ion-icon>
                     </div>
                 </div>
@@ -87,7 +86,6 @@
                     </div>
                     <div class="post-actions">
                         <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="chatbubbles-outline"></ion-icon>
                         <ion-icon name="arrow-redo-outline"></ion-icon>
                     </div>
                 </div>
@@ -116,7 +114,6 @@
                     </div>
                     <div class="post-actions">
                         <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="chatbubbles-outline"></ion-icon>
                         <ion-icon name="arrow-redo-outline"></ion-icon>
                     </div>
                 </div>
