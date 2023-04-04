@@ -78,17 +78,6 @@
                                 <label for="calcado">Calçado</label>
                                 <input type="number" id="calcado" name="Calcado" min="33" max="48" placeholder="min: 33 max:48" required>
                             </div>
-                            <div class="loja" required>
-                                <label>Possui loja física? (Brechó/Bazar)</label>
-                                    <div class="loja-input">
-                                        <input type="radio" id="nao" name="loja">
-                                        <label for="nao">Não</label>
-                                    </div>
-                                    <div class="loja-input">
-                                        <input type="radio" id="sim" name="loja">
-                                        <label for="sim">Sim</label>
-                                    </div>
-                            </div>
                     </div>
 
                     <div class="continue-button">
