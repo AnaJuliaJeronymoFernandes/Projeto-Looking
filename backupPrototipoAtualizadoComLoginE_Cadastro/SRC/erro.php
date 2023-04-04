@@ -24,11 +24,14 @@
                         <!-- -->
                         
                     <img src="../assets/img/ezgif.com-video-to-mp4.mp4" ata-gifffer="image.gif" class="imgconcluido" alt="Ok">
-                    <p>
-                        Algum dado foi inserido incorretamente, ou há campos vazios, ou o cadastro/login não teve sucesso.
-                    </p>
-                    
+                    <br>
+                    <br>
+                    <p>Cadastro/Login não realizado. Confira alguns dos possíveis erros e tente novamente:</p>
                     </div>
+                    <p>Dado inserido incorretamente;</p>
+                    <p>Presença de campos vazios;</p>
+                    <p>Cadastro/login não obteve sucesso.</p>
+                    
                     <div class="continue-button">
                         <a href="../public/index.php">Voltar</a>
                     </div>
