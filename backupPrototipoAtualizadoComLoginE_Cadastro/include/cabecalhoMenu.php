@@ -7,12 +7,12 @@
                 </label>
             </div>
             <div class="navbar-logo">
-                <a href="inicio.html">
+                <a href="inicio.php">
                     <img src="../assets/img/LookingMenu.png" alt="Looking" class="logo">
                 </a>
             </div>
             <div class="pesquisa">
-                <form action="resultadobusca.html">
+                <form action="resultadobusca.php">
                     <input type="text" name="pesquisa" placeholder="Buscar..."/>
                     <button type="submit">
                         <span class="material-symbols-outlined">search</span>
