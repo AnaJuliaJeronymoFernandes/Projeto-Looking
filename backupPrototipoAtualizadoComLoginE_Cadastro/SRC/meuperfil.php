@@ -35,8 +35,8 @@
                         <h2>Bruna Hamada</h2>
                     </div>
                     <div class="contatos">
-                        <p><span class="material-symbols-outlined">pin_drop</span> Araraquara - SP</p>
-                        <p><span class="material-symbols-outlined">call</span> (16) 99614-2354</p>
+                        <p><span class="material-symbols-outlined">pin_drop</span> <?php $_SESSION["Cidade"] ?></p>
+                        <p><span class="material-symbols-outlined">call</span> <?php $_SESSION["Telefone"] ?></p>
                     </div>
                 </div>
         </div>
