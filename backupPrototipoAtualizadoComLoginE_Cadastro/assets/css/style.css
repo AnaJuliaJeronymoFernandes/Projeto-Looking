@@ -111,6 +111,60 @@ Fundo branco que é puxado pro cinza: #F5F5F5*/
     }
 }
 
+.search-box{
+    background: white;
+    height: 50px;
+    padding: 10px;
+    border-radius: 40px;
+
+    display: flex;
+    justify-content: space-between;/*um para a esquerda e outro para a direita*/
+    align-items: center;
+}
+
+.search-text{
+    background: none;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    width: 0;
+    padding: 0;
+
+    transition: 0.4s;
+}
+
+.search-box:hover > .search-text{
+    width: 320px;
+    padding-left: 20px;
+}
+
+.search-btn{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    cursor: pointer;/*efeito de mãozinha*/
+
+    text-decoration: none;
+
+    color: black;
+}
+
+.search-box:hover > .search-btn{
+    color: white;
+}
+
+.search-box:hover{
+    background: #3B8DB3;
+}
+
+.search-text::placeholder{
+    color: white;
+}
+
 /*Início*/
 body{
     min-height: 100%;
