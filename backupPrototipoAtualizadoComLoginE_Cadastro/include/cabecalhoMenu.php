@@ -8,7 +8,7 @@
             </div>
             <div class="navbar-logo">
                 <a href="inicio.php">
-                    <img src="../assets/img/LookingMenu.png" alt="Looking" class="logo">
+                    <img src="../assets/img/LookingMenu.png" alt="Looking" class="logoCabecalhoMenu">
                 </a>
             </div>
             <div class="pesquisa">
