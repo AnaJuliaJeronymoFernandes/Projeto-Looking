@@ -4,6 +4,8 @@ USE IFSP;
 DROP TABLE IF EXISTS Usuario;
 DROP TABLE IF EXISTS Genero;
 DROP TABLE IF EXISTS Tamanho;
+DROP TABLE IF EXISTS Loja;
+DROP TABLE IF EXISTS Peca;
 
 CREATE TABLE Usuario(
     CPF VARCHAR(11) NOT NULL,
@@ -26,6 +28,28 @@ CREATE TABLE Tamanho(
     Calca VARCHAR(2),
     Calcado VARCHAR(2)
 );
+CREATE TABLE Loja(
+    NomeLoja VARCHAR(255) NOT NULL,
+    Endereco VARCHAR(255) NOT NULL,
+    CNPJ VARCHAR(11) NOT NULL,
+    NomeDono VARCHAR(20) NOT NULL,
+    TelefoneLoja VARCHAR(11) NOT NULL,
+    EmailLoja Varchar(255) NOT NULL,
+    PRIMARY KEY (CNPJ)
+);
+
+CREATE TABLE Peca(
+    IdPeca INT NOT NULL AUTO_INCREMENT,
+    Descricao VARCHAR(255) NOT NULL,
+    Tecido VARCHAR(255) NOT NULL,
+    PalavraChave VARCHAR(50) NOT NULL,
+    Imagem VARCHAR(255) NOT NULL,
+    Troca VARCHAR(255) NOT NULL,
+    EmailLoja Varchar(255) NOT NULL,
+    TamanhoPeca VARCHAR(4),
+    PRIMARY KEY (IdPeca)
+);
+
 
 INSERT INTO Genero(NomeGenero) VALUES
     ("Feminino"),("Masculino"),("Nao binario"),("Outro"),("Prefiro nao informar");
