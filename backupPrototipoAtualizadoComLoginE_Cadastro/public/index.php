@@ -8,7 +8,7 @@
     <title>Looking</title>
     <script src= "assets/js/script.js"></script>
 </head>
-    <?phpssssssssssssss
+    <?php
         include("../include/cabecalho.php");
     ?>
 
