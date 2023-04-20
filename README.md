@@ -1,2 +1,2 @@
 # Projeto-Looking
-Descrição muito elaborada
+Descrição muito elaborada feita pela Ana Julia
