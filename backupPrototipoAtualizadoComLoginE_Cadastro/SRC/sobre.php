@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Sobre</title>
 </head>
-<?php
-    include("../include/cabecalho.php");
-?>
 <body class="bodysobre">
-    
+<?php
+        include("../include/cabecalho.php");
+    ?>
     <main class="sobre">
         <div class="container">
             <h1>Sobre</h1>
@@ -28,7 +27,7 @@
                     <div class="slide first" id="slide1">
                         <div class="mascarapreta">
                         <h2>Origem</h2>
-                        <p>A idealização do projeto iniciou-se através do TCC de informática integrado ao ensino médio pelo Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Campus Araraquara. Iniciado no ano de 2022, desenvolvido por alunos do 4° ano.</p>
+                        <p>A idealização do projeto iniciou-se através do TCC de informática integrado ao ensino médio pelo Instituto Federal de Educação, Ciência e Tecnologia de São Paulo - Campus Araraquara. Iniciado no ano de 2022, desenvolvido por alunos do 3° ano TA.</p>
                         </div>
                     </div>
                     <div class="slide" id="slide2">
@@ -86,15 +85,15 @@
                 </div>
                 <div class="autor">
                     <div class="imagem">
-                    <img src="../assets/img/gato-usando-roupa-Petlove.jpg" alt="Matheus"/>
+                    <img src="../assets/img/matheus.jpg" alt="Matheus"/>
                     </div>
                     <div class="texto">
                         <h2>Matheus</h2>
                         <ul>
                             <li><span class="material-symbols-outlined">magic_button</span> 17 anos</li>
-                            <li><a href="https://www.instagram.com/gabriel.alb5" target="_blank"><span class="material-symbols-outlined">alternate_email</span> gabriel.alb5</a></li>
-                            <li><span class="material-symbols-outlined">favorite</span> Taekwondo e jogos</li>
-                            <li><span class="material-symbols-outlined">psychology</span> Programador</li>
+                            <li><a href="https://www.instagram.com/mateu@eu" target="_blank"><span class="material-symbols-outlined">alternate_email</span> matheus@eu</a></li>
+                            <li><span class="material-symbols-outlined">favorite</span> Violino e leitura</li>
+                            <li><span class="material-symbols-outlined">psychology</span> Designer</li>
                         </ul>
                     </div>
                 </div>
@@ -115,9 +114,9 @@
             </div>
         </div> 
     </main>
+    <?php
+        include("../include/rodape.php");
+    ?>
     <script src="../assets/js/script.js"></script>
 </body>
-<?php
-    include("../include/rodape.php");
-?>
 </html>

@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	if(!isset($_SESSION["cpf"])) {
-		header("location: public/index.php");
+		header("location: ../public/index.php");
 		die();
 	}
 ?>
@@ -18,20 +18,8 @@
 </head>
 <body class="inicio">
     <?php
-    include("../include/cabecalhoMenu.php");
-?>
-    <main class="inicio">
-        <div class="sidebar ajeitaSidebar">
-            <div class="conteudo">
-            <img src="../assets/img/Bruna.jpg" class="image" alt="">
-            <h2>Bruna</h2>
-            <a href="meuperfil.php"><span class="material-symbols-outlined">person</span>Perfil</a>
-            <a href="favoritos.php"><span class="material-symbols-outlined">star</span>Favoritos</a>
-            <a href="cadastroLoja.php"><span class="material-symbols-outlined">checkroom</span>Cadastrar Loja</a>
-            <a href="configuracoes.php"><span class="material-symbols-outlined">settings</span>Configurações</a>
-            <a href="logout.php" id="sair"><span class="material-symbols-outlined">logout</span>Sair</a>
-            </div>
-        </div>
+        include ("../include/cabecalhoMenu.php");
+    ?>
 
         <div id="feed">
 
@@ -40,6 +28,7 @@
                 <div class="post-header">
                     <img src="../assets/img/Ana.jpeg">
                     <p>Ana Julia Jeronymo</p>
+                    <ion-icon name="add-circle-outline"></ion-icon>
                 </div>
                 <div class="post-image">
                     <img src="../assets/img/boneVermelho.jpg">
@@ -58,7 +47,8 @@
                     </div>
                     <div class="post-actions">
                         <ion-icon name="star-outline"></ion-icon>
-                        <a href="urlCompartilhar.php" style="color: black"><ion-icon name="arrow-redo-outline"></ion-icon></a>
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                        <ion-icon name="arrow-redo-outline"></ion-icon>
                     </div>
                 </div>
             </div>
@@ -66,8 +56,9 @@
             <!-- SEGUNDO POST -->
             <div class="post">
                 <div class="post-header">
-                    <img src="../assets/img/Gabriel.jpg">
-                    <p>Gabriel Albino</p>
+                    <img src="../assets/img/matheus.jpg">
+                    <p>Matheus Colombo</p>
+                    <ion-icon name="add-circle-outline"></ion-icon>
                 </div>
                 <div class="post-image">
                     <img src="../assets/img/blusaPreta.jpg">
@@ -86,7 +77,8 @@
                     </div>
                     <div class="post-actions">
                         <ion-icon name="star-outline"></ion-icon>
-                        <a href="urlCompartilhar.php" style="color: black"><ion-icon name="arrow-redo-outline"></ion-icon></a>
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                        <ion-icon name="arrow-redo-outline"></ion-icon>
                     </div>
                 </div>
             </div>
@@ -96,6 +88,7 @@
                 <div class="post-header">
                     <img src="../assets/img/Lara.jpeg">
                     <p>Lara Valentim</p>
+                    <ion-icon name="add-circle-outline"></ion-icon>
                 </div>
                 <div class="post-image">
                     <img src="../assets/img/calcaAzul.jpg">
@@ -114,7 +107,8 @@
                     </div>
                     <div class="post-actions">
                         <ion-icon name="star-outline"></ion-icon>
-                        <a href="urlCompartilhar.php" style="color: black"><ion-icon name="arrow-redo-outline"></ion-icon></a>
+                        <ion-icon name="chatbubbles-outline"></ion-icon>
+                        <ion-icon name="arrow-redo-outline"></ion-icon>
                     </div>
                 </div>
             </div>
@@ -125,12 +119,12 @@
     </main>
 
         
-        <script src="../assets/js/script.js"></script>
+        <script src="assets/js/script.js"></script>
         
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-    <?php
-        include("../include/rodape.php");
-    ?>
+<?php
+    include("../include/rodape.php");
+?>
 </html>

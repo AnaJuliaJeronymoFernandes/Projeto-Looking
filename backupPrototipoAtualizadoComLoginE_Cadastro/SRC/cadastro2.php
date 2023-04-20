@@ -1,3 +1,7 @@
+<?php
+    include("conexao.php");
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -18,7 +22,7 @@
             <div class="formcadastro">
                 <form class="form" method="POST" action="recuperarCadastro2.php" enctype="multipart/form-data">
                     <div class="form-header">
-                        <h1 class="cadastroh1">Cadastro</h1>
+                        <h1 class="cadastroh2">Cadastro</h1>
                     <div class="login-button">
                         <a href="login.php">Entrar</a>
                     </div>
@@ -28,19 +32,19 @@
                     <div class="colunacadastro">
                         <div class="coluna1">
                             <div class="input-box">
-                                <label for="nascimento">Data de nascimento</label>
-                                <input type="date" id="nascimento" name="Nascimento" required/>
+                                <label for="nascimento">Data de Nascimento</label>
+                                <input type="date" id="nascimento" name="nascimento"/>
                             </div>
 
                             <div class="input-box">
                                 <label for="genero">Gênero</label>
-                                <select id="genero" name="NomeGenero" required>
+                                <select id="genero" name="genero">
                                     <option value="">Escolher...</option>
-                                    <option name="Feminino" value="female">Feminino</option>
-                                    <option name="Maculino" value="male">Masculino</option>
-                                    <option name="Nao binario" value="genderfluid">Não binário</option>
-                                    <option name="Outro" value="other">Outro</option>
-                                    <option name="Prefiro nao informar" value="none">Prefiro não informar</option>
+                                    <option value="female">Feminino</option>
+                                    <option value="male">Masculino</option>
+                                    <option value="genderfluid">Não binário</option>
+                                    <option value="other">Outro</option>
+                                    <option value="none">Prefiro não informar</option>
                                 </select>
                             </div>
                         </div>
@@ -59,7 +63,7 @@
                             </div>
                             <div class="input-box">
                                 <label for="camiseta">Camiseta</label>
-                                <select id="camiseta" name="Camiseta" required>
+                                <select id="camiseta" name="camiseta">
                                     <option value="">Escolher...</option>
                                     <option value="PP">PP</option>
                                     <option value="P">P</option>
@@ -72,15 +76,15 @@
                             </div>
                             <div class="input-box">
                                 <label for="calca">Calça</label>
-                                <input type="number" id="calca" name="Calca" min="34" max="48" step= "2" placeholder="min:34 max:48" required>
+                                <input type="number" id="calca" name="calca" min="0" max="100" placeholder="Ex: 42">
                             </div>
                             <div class="input-box">
                                 <label for="calcado">Calçado</label>
-                                <input type="number" id="calcado" name="Calcado" min="33" max="48" placeholder="min: 33 max:48" required>
+                                <input type="number" id="calcado" name="calcado" min="0" max="100" placeholder="Ex: 40">
                             </div>
                     </div>
 
-                    <div class="continue-button">
+                    <div class="continue-button-cad2">
                         <button type="submit">Cadastrar</button>
                         <!-- <button><a href="../sucesso.html">Cadastrar</a></button> -->
                     </div>

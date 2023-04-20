@@ -13,24 +13,24 @@ if(!isset($_SESSION["cpf"])) {
         session_start();
     }
 
-    $Nome = $_POST["Nome"];
-    $Sobrenome = $_POST["Sobrenome"];
-    $CPF = $_POST["CPF"];
-    $Cidade = $_POST["Cidade"];
-    $Telefone = $_POST["Telefone"];
-    $Email = $_POST["Email"];
-    $Senha = $_POST["Senha"];
+    $nome = $_POST["nome"];
+    $sobrenome = $_POST["sobrenome"];
+    $cpf = $_POST["cpf"];
+    $cidade = $_POST["cidade"];
+    $tel = $_POST["tel"];
+    $email = $_POST["email"];
+    $senha = $_POST["senha"];
 
 
-    if(!empty(trim($Nome)) && !empty(trim($Sobrenome)) && !empty(trim($CPF)) && !empty(trim($Cidade)) && !empty(trim($Telefone)) && !empty(trim($Email)) && !empty(trim($Senha))){
+    if(!empty(trim($nome)) && !empty(trim($sobrenome)) && !empty(trim($cpf)) && !empty(trim($cidade)) && !empty(trim($tel)) && !empty(trim($email)) && !empty(trim($senha))){
 
-        $_SESSION["Nome"] = $_POST["Nome"];
-        $_SESSION["Sobrenome"] = $_POST["Sobrenome"];
-        $_SESSION["CPF"] = $_POST["CPF"];
-        $_SESSION["Cidade"] = $_POST["Cidade"];
-        $_SESSION["Telefone"] = $_POST["Telefone"];
-        $_SESSION["Email"] = $_POST["Email"];
-        $_SESSION["Senha"] = $_POST["Senha"];
+        $_SESSION["nome"] = $_POST["nome"];
+        $_SESSION["sobrenome"] = $_POST["sobrenome"];
+        $_SESSION["cpf"] = $_POST["cpf"];
+        $_SESSION["cidade"] = $_POST["cidade"];
+        $_SESSION["tel"] = $_POST["tel"];
+        $_SESSION["email"] = $_POST["email"];
+        $_SESSION["senha"] = $_POST["senha"];
 
         header("location: cadastro2.php");
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Looking</title>
 </head>
@@ -46,7 +46,7 @@
         </div>
         <div class="containercad">
             <div class="form-image">
-                <img src="assets/img/peça.svg" alt="ilustração">
+                <img src="../assets/img/peça.svg" alt="ilustração">
             </div>
             <div class="formcadastro">
                 <form class="form">
@@ -54,7 +54,7 @@
                         <h1 class="cadastroh1">Cadastro de peça</h1>
                     </div>
                     <div class="concluido">
-                        <img src="assets/img/verify-unscreen.gif" class="imgconcluido" alt="Ok">
+                        <img src="../assets/img/verify-unscreen.gif" class="imgconcluido" alt="Ok">
                         <p>Concluído</p>
                     </div>
                 </form>
@@ -67,11 +67,10 @@
             </div>
         </div>
     </main>
-    <footer class="rodape">
-        <div class="footer-logo"><a href="#"><img src="assets/img/LookingMenu.png" alt="Looking" class="logo-rodape"></a></div>
-        <p>Copyright&copy; 2022 IFSP - Campus Araraquara</p>
-    </footer>
+    <?php
+        include("../include/rodape.php");
+    ?>
     </div>
-    <script src="assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>

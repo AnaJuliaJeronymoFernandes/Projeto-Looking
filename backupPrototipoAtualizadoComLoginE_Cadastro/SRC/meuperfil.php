@@ -9,21 +9,9 @@
     <title>Looking</title>
 </head>
 <body class="perfil">
-    <?php
-        include("../include/cabecalhoMenu.php");
+<?php
+        include ("../include/cabecalhoMenu.php");
     ?>
-    <main>
-        <div class="sidebar ajeitaSidebar">
-            <div class="conteudo">
-            <img src="../assets/img/Bruna.jpg" class="image" alt="">
-            <h2>Bruna</h2>
-            <a href="meuperfil.php"><span class="material-symbols-outlined">person</span>Perfil</a>
-            <a href="favoritosvazio.php"><span class="material-symbols-outlined">star</span>Favoritos</a>
-            <a href="cadastroLoja.php"><span class="material-symbols-outlined">checkroom</span>Cadastrar Loja</a>
-            <a href="configuracoes.php"><span class="material-symbols-outlined">settings</span>Configurações</a>
-            <a href="../public/index.php" id="sair"><span class="material-symbols-outlined">logout</span>Sair</a>
-            </div>
-        </div>
         <div class="cabecalho">
                 <div class="capa"></div>
                 <div class="dados">
@@ -35,8 +23,8 @@
                         <h2>Bruna Hamada</h2>
                     </div>
                     <div class="contatos">
-                        <p><span class="material-symbols-outlined">pin_drop</span> <?php $_SESSION["Cidade"] ?></p>
-                        <p><span class="material-symbols-outlined">call</span> <?php $_SESSION["Telefone"] ?></p>
+                        <p><span class="material-symbols-outlined">pin_drop</span> Araraquara - SP</p>
+                        <p><span class="material-symbols-outlined">call</span> (16) 99614-2354</p>
                     </div>
                 </div>
         </div>
@@ -51,4 +39,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
+<?php
+        include("../include/rodape.php");
+    ?>
 </html>

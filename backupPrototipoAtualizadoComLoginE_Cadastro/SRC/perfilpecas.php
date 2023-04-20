@@ -18,12 +18,12 @@
                 </label>
             </div>
             <div class="navbar-logo">
-                <a href="inicio.php">
-                    <img src="../assets/img/LookingMenu.png" alt="Looking" class="logo">
+                <a href="inicio.html">
+                    <img src="assets/img/LookingMenu.png" alt="Looking" class="logo">
                 </a>
             </div>
             <div class="pesquisa">
-                <form action="resultadobusca.php">
+                <form action="resultadobusca.html">
                     <input type="text" name="pesquisa" placeholder="Buscar..."/>
                     <button type="submit">
                         <span class="material-symbols-outlined">search</span>
@@ -35,13 +35,13 @@
     <main class="perfilpecas">
         <div class="sidebar ajeitaSidebar">
             <div class="conteudo">
-            <img src="../assets/img/Bruna.jpg" class="image" alt="">
+            <img src="assets/img/Bruna.jpg" class="image" alt="">
             <h2>Bruna</h2>
-            <a href="perfilpecas.php"><span class="material-symbols-outlined">person</span>Perfil</a>
-            <a href="favoritos.php"><span class="material-symbols-outlined">star</span>Favoritos</a>
+            <a href="perfilpecas.html"><span class="material-symbols-outlined">person</span>Perfil</a>
+            <a href="favoritos.html"><span class="material-symbols-outlined">star</span>Favoritos</a>
             <a href=""><span class="material-symbols-outlined">checkroom</span>Cadastrar Loja</a>
             <a href=""><span class="material-symbols-outlined">settings</span>Configurações</a>
-            <a href="../public/index.php" id="sair"><span class="material-symbols-outlined">logout</span>Sair</a>
+            <a href="index.html" id="sair"><span class="material-symbols-outlined">logout</span>Sair</a>
             </div>
         </div>
         <div class="cabecalho">
@@ -57,7 +57,6 @@
                     <div class="contatos">
                         <p><span class="material-symbols-outlined">pin_drop</span> Araraquara - SP</p>
                         <p><span class="material-symbols-outlined">call</span> (16) 99614-2354</p>
-                        <p><span class="material-symbols-outlined">person</span> Seguidores: 0 | </span>Seguindo: 0</p>
                     </div>
                 </div>
         </div>
@@ -79,4 +78,7 @@
     </main>
     <script src="../assets/js/script.js"></script>
 </body>
+<?php
+        include("../include/rodape.php");
+    ?>
 </html>

@@ -10,9 +10,9 @@
         <div class="navbar-links">
             <ul>
                 <li><a href="../public/index.php">Início</a></li>
-                <li><a href="../SRC/sobre.php">Sobre</a></li>
+                <li><a href="../sobre.html">Sobre</a></li>
                 <li><a href="../SRC/cadastro.php">Cadastre-se</a></li>
-                <li><a href="../SRC/login.php">Entrar</a></li>
+                <li><a href="../login.php">Entrar</a></li>
             </ul>
         </div>
     </nav>

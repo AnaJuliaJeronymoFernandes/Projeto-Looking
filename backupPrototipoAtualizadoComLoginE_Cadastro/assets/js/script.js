@@ -30,28 +30,28 @@ if (checkBtn) {
 
 //redirecionamentos
 function red_cadastro(){
-    window.location.href = "../../SRC/cadastro.html";
+    window.location.href = "cadastro.html";
 }
 function red_sucesso(){
-    window.location.href = "../../SRC/sucesso.php";
+    window.location.href = "sucesso.html";
 }
 function red_login(){
-    window.location.href = "../../SRC/login.php";
+    window.location.href = "login.html";
 }
 function red_cadastro2(){
-    window.location.href = "../../SRC/cadastro2.php";
+    window.location.href = "cadastro2.html";
 }
 function sucesso(){
-    window.location.href = "../../SRC/sucesso.php";
+    window.location.href = "sucesso.html";
 }
 function red_peca(){
-    window.location.href = "../../SRC/cadastropeca.php"
+    window.location.href = "cadastropeca.html"
 }
 function red_perfilpecas(){
-    window.location.href = "../../SRC/perfilpecas.php"
+    window.location.href = "perfilpecas.html"
 }
 function red_buscafavorito(){
-    window.location.href = "../../SRC/buscafavorito.php"
+    window.location.href = "buscafavorito.html"
 }
 
 //imagem no cadastro
@@ -78,36 +78,3 @@ function ver_senha() {
       span.textContent = "visibility";
     }
 }
-
-//executar o gif apenas uma vez
-window.onload = function() {
-    Gifffer();
-}
-
-(function(){
-  
-    var $gif         = document.querySelector('verify-unscreen.gif'),
-        GIF_DURATION = 1050;
-  
-    function handleGif(){
-      
-      // Cria o canvas com o mesmo tamanho da imagem.
-      var $canvas = document.createElement('canvas');
-      $canvas.setAttribute('width', $gif.width);
-      $canvas.setAttribute('height', $gif.height);
-      
-      // Desenha a imagem no canvas
-      var context = $canvas.getContext('2d');
-      context.drawImage($gif, 0, 0);
-      
-      // Remove a imagem e insere o canvas
-      document.body.removeChild($gif);
-      document.body.appendChild($canvas);
-    }
-    
-    var timeout = setTimeout(function(){
-        handleGif();
-      clearTimeout(timeout);
-    }, GIF_DURATION);
-    
-  })();

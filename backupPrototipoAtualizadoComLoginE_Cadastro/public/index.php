@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css"/>
     <title>Looking</title>
-    <script src= "assets/js/script.js"></script>
+    <script src= "../assets/js/script.js"></script>
 </head>
     <?php
         include("../include/cabecalho.php");
@@ -21,7 +21,7 @@
                 <h4>a sua moda + sustentável</h4>
             </div>
             <div class="btninicio">
-                <a href="../SRC/cadastro.php"><button class="btnazul" onclick="red_cadastro()">Primeiro acesso? Clique aqui</button></a>   
+                <a href="../SRC/cadastro.php"><button class="btnazul">Primeiro acesso? Clique aqui</button></a>   
             </div>
         </main>
         </div>

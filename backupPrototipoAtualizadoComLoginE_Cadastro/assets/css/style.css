@@ -36,12 +36,6 @@ Fundo branco que é puxado pro cinza: #F5F5F5*/
     margin-left: 1vw;
 }
 
-.logoCabecalhoMenu{
-    height: 30px;
-    margin-left: 1vw;
-    position: ;
-}
-
 .navbar-links ul{
     margin: 0;
     padding: 0;
@@ -117,58 +111,6 @@ Fundo branco que é puxado pro cinza: #F5F5F5*/
     }
 }
 
-.search-box{
-    background: white;
-    height: 50px;
-    padding: 10px;
-    border-radius: 40px;
-
-    display: flex;
-    /*justify-content: space-between; um para a esquerda e outro para a direita*/
-    align-items: center;
-}
-
-.search-text{
-    background: none;
-    border: 0;
-    outline: 0;
-    font-size: 16px;
-    width: 0;
-    padding: 0;
-
-    transition: 0.4s;
-}
-
-.search-box:hover > .search-text{
-    width: 200px;
-    padding-left: 20px;
-}
-
-.search-btn{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-
-    text-decoration: none;
-
-    color: black;
-}
-
-.search-box:hover > .search-btn{
-    color: white;
-}
-
-.search-box:hover{
-    background: #1b6283;
-}
-
-.search-text::placeholder{
-    color: white;
-}
-
 /*Início*/
 body{
     min-height: 100%;
@@ -193,10 +135,6 @@ main{
     background-color: #F5F5F5;
     padding: 3vh;
     text-align: center;
-    
-    bottom: 0;
-    width: 100%;
-    height: 100px;
 }
 .logo-rodape{
     height: 20px;
@@ -228,6 +166,17 @@ main{
     justify-content: center;
     align-items:  center;
     background: #3B8DB3;
+
+
+}
+
+.cadastroloja{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    background: #0A671F;
 }
 .containercad{
     width: 80%;
@@ -267,13 +216,24 @@ main{
 }
 .login-button a{
     border: none;
-    background-color: #3B8DB3;
+    background-color: #12729e;
     padding: 0.4rem 1rem;
     border-radius: 5px;
     text-decoration: none;
     color: white;
     font-weight: 400;
 }
+
+.login-buttn a{
+    border: none;
+    background-color: #0E841E;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+}
+
 .login-button a:hover{
     background-color: #1b6283;
 }
@@ -283,10 +243,26 @@ main{
     display: block;
     width: 5rem;
     height: 0.3rem;
-    background-color: #3B8DB3;
+    background-color: #0E841E;
     margin: 0 auto;
     position: absolute;
     border-radius: 10px;
+
+}
+
+.form-header .cadastroh2::after{
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #1b6283;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+
+}
+.continue-button-cad2 button:hover {
+    background-color: #1b6283;
 }
 .input-group{
     display: flex;
@@ -340,14 +316,56 @@ main{
     width: 100%;
     margin-top: 1rem;
     border: none;
+    background-color: #0E841E;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.continue-button-cad2 button {
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
     background-color: #3B8DB3;
     padding: 0.62rem;
     border-radius: 5px;
     cursor: pointer;
 }
+.continue-button-peca button {
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    background-color: #0E841E;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+.continue-button-loja button  {
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    background-color: #0E841E;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-.continue-button button:hover {
-    background-color: #1b6283;
+.continue-button-cadastro button {
+    width: 100%;
+    margin-top: 1rem;
+    border: none;
+    background-color: #12729e;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+.continue-button-peca button:hover {
+    background-color: #0a6816;
+    text-align: center;
 }
 
 .continue-button button a {
@@ -403,16 +421,26 @@ main{
     display: flex;
 }
 .coluna1{
-    width: 40%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     margin-right: 20px;
 }
 .coluna2{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
 }
+.coluna3{
+    width: 350px;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 6px;
+    font-size: 18px;
+    flex-direction: row;
+    }
+    
+
 .coluna2 #preview{
     width: 10vh;
 }
@@ -756,7 +784,7 @@ main{
 
 /*-----INÍCIO-----*/
 .inicio{
-    background-color: #c44949;
+    background-color: #F5F5F5;
 }
 
 .logado .navbar{
@@ -927,8 +955,6 @@ main{
 
     align-items: center;
     justify-content: center;
-
-    background-color: #1b6283;
 }
 
 .post {
@@ -1110,7 +1136,7 @@ ion-icon:hover{
     display: flex;
     justify-content: center;
     align-items:  center;
-    background: #3B8DB3;
+    background: #0A671F;
 }
 
 .cadastropeca .containercad .formcadastro{
@@ -1137,6 +1163,14 @@ ion-icon:hover{
     display: flex;
     width: 50%;
 }
+
+#imgpreview{
+    width: 400%;
+}
+#imgpreview-cad{
+    width: 115%;
+}
+
 .cadastropeca #preview{
     width: 200px;
 }

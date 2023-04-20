@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <title>Entrar</title>
 </head>
-<?php
-    include("../include/cabecalho.php");
-?>
 <body>
+    <?php
+        include("../include/cabecalho.php");
+    ?>
     <main class="login">
         <div class="containerlog">
             <div class="form-image">
                 <img src="../assets/img/login.svg" alt="ilustração">
             </div>
             <div class="formlogin">
+                <!--MUDEI-->
                 <form class="form" action="recuperarLogin.php" method="POST">
                     <div class="form-header">
                         <div>
@@ -30,27 +31,33 @@
                     <div>
                         <div class="input-box">
                             <label for="email"><span class="material-symbols-outlined" id="iconelogin">mail</span></label>
-                            <input type="email" id="email" name="Email" placeholder="E-mail"/>
+                            <input type="email" id="email" name="email" placeholder="E-mail"/>
                         </div>
 
                         <div class="input-box">
                             <label for="senha"><span class="material-symbols-outlined" id="iconelogin">lock</span></label>
-                            <input type="password" id="senha" name="Senha" placeholder="Senha"/>
+                            <input type="password" id="senha" name="senha" placeholder="Senha"/>
                         </div>
                         <div class="input-box">
                         <span class="material-symbols-outlined" id="olho" onclick="ver_senha()">visibility</span><p>Mostrar senha</p>
                         </div>
+                        
+                        <!--MUDEI-->
                         <div class="entrar-button">
+                            <!--
+                            <button><a href="inicio.html">Continuar</a></button>
+                            -->
                             <button type="submit">Enviar</button>
                         </div>
+                        
                     </div>
                 </form>
             </div>
         </div>
     </main>
+    <?php
+        include("../include/rodape.php");
+    ?>
     <script src="../assets/js/script.js"></script>
 </body>
-<?php
-    include("../include/rodape.php");
-?>
 </html>
