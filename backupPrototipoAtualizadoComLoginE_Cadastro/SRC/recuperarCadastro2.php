@@ -3,7 +3,7 @@
         session_start();
     }
 
-    require("conexao.php");
+    require("conexao.php");ssssssssssssssss
     require("operacoes.php");
     
     //dados do cadastro2.php
