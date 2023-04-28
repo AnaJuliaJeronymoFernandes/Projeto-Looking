@@ -41,6 +41,3 @@
             <a href="../SRC/logout.php" id="sair"><span class="material-symbols-outlined">logout</span>Sair</a>
             </div>
         </div>
-        <?php
-            include("../assets/js/script.js");
-        ?>

@@ -28,7 +28,6 @@
                 <div class="post-header">
                     <img src="../assets/img/Ana.jpeg">
                     <p>Ana Julia Jeronymo</p>
-                    <ion-icon name="add-circle-outline"></ion-icon>
                 </div>
                 <div class="post-image">
                     <img src="../assets/img/boneVermelho.jpg">
@@ -47,7 +46,6 @@
                     </div>
                     <div class="post-actions">
                         <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="chatbubbles-outline"></ion-icon>
                         <ion-icon name="arrow-redo-outline"></ion-icon>
                     </div>
                 </div>
@@ -58,7 +56,6 @@
                 <div class="post-header">
                     <img src="../assets/img/matheus.jpg">
                     <p>Matheus Colombo</p>
-                    <ion-icon name="add-circle-outline"></ion-icon>
                 </div>
                 <div class="post-image">
                     <img src="../assets/img/blusaPreta.jpg">
@@ -77,7 +74,6 @@
                     </div>
                     <div class="post-actions">
                         <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="chatbubbles-outline"></ion-icon>
                         <ion-icon name="arrow-redo-outline"></ion-icon>
                     </div>
                 </div>
@@ -88,7 +84,6 @@
                 <div class="post-header">
                     <img src="../assets/img/Lara.jpeg">
                     <p>Lara Valentim</p>
-                    <ion-icon name="add-circle-outline"></ion-icon>
                 </div>
                 <div class="post-image">
                     <img src="../assets/img/calcaAzul.jpg">
@@ -107,7 +102,6 @@
                     </div>
                     <div class="post-actions">
                         <ion-icon name="star-outline"></ion-icon>
-                        <ion-icon name="chatbubbles-outline"></ion-icon>
                         <ion-icon name="arrow-redo-outline"></ion-icon>
                     </div>
                 </div>
@@ -115,11 +109,8 @@
             
             
         </div>
-            
-    </main>
-
         
-        <script src="assets/js/script.js"></script>
+        <script src="../assets/js/script.js"></script>
         
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
