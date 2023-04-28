@@ -4,6 +4,8 @@ USE IFSP;
 DROP TABLE IF EXISTS Usuario;
 DROP TABLE IF EXISTS Genero;
 DROP TABLE IF EXISTS Tamanho;
+DROP TABLE IF EXISTS Loja;
+DROP TABLE IF EXISTS Peca;
 
 CREATE TABLE Usuario(
     CPF VARCHAR(11) NOT NULL,
@@ -22,41 +24,32 @@ CREATE TABLE Genero(
     NomeGenero VARCHAR(255) NOT NULL
 );
 
------
-
--- SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
--- START TRANSACTION;
--- SET time_zone = "+00:00";
-
-
-
-
--- CREATE TABLE Teste(
---    idImg INT NOT NULL AUTO_INCREMENT,
---    CaminhoImg varchar(255) NOT NULL,
---    PRIMARY KEY (IdImg)
---  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
-
-
-
--- -- INSERT INTO `teste` (`id`, `nome`, `descricao`, `caminho_img`) VALUES
--- -- (1, 'Lara', 'aluna', './uploads/1681157450.png'),
--- -- (2, 'Joao', 'GTA', './uploads/1681158114.png');
-
--- ALTER TABLE Teste
---   ADD PRIMARY KEY ("ID");
-
---   ALTER TABLE Teste
---   MODIFY "ID" int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT= 3;
--- COMMIT;
-
------
-
 CREATE TABLE Tamanho(
     Camiseta VARCHAR(3),
     Calca VARCHAR(2),
     Calcado VARCHAR(2)
+);
+
+CREATE TABLE Loja(
+    NomeLoja VARCHAR(255) NOT NULL,
+    Endereco VARCHAR(255) NOT NULL,
+    CNPJ VARCHAR(11) NOT NULL,
+    NomeDono VARCHAR(20) NOT NULL,
+    TelefoneLoja VARCHAR(11) NOT NULL,
+    EmailLoja Varchar(255) NOT NULL,
+    PRIMARY KEY (CNPJ)
+);
+
+CREATE TABLE Peca(
+    IdPeca INT NOT NULL AUTO_INCREMENT,
+    Descricao VARCHAR(255) NOT NULL,
+    Tecido VARCHAR(255) NOT NULL,
+    PalavraChave VARCHAR(50) NOT NULL,
+    Imagem VARCHAR(255) NOT NULL,
+    Troca VARCHAR(255) NOT NULL,
+    EmailLoja Varchar(255) NOT NULL,
+    TamanhoPeca VARCHAR(4),
+    PRIMARY KEY (IdPeca)
 );
 
 INSERT INTO Genero(NomeGenero) VALUES

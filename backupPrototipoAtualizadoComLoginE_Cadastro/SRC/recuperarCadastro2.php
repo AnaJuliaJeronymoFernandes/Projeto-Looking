@@ -24,7 +24,8 @@
         if($img_erro == UPLOAD_ERR_OK){
              $ImgDestino = "../uploads/".time().".jpg";
              move_uploaded_file($img_tmp, $ImgDestino);
-             insert($ImgDestino);
+             cadastrar_usuario($conexao, $nome, $sobrenome, $cpf, $cidade, $tel, $email, $senha, $nascimento, $ImgDestino, $camiseta, $calca, $calcado);
+            //insert($ImgDestino);
         }
     }
     
@@ -51,7 +52,7 @@
             $_SESSION["calcado"] = $calcado;
 
 
-			$cadastro2 = array($conexao, $nascimento, $ImgDestino, $camiseta, $calca, $calcado);
+			$cadastro2 = cadastrar_usuario($conexao, $nome, $sobrenome, $cpf, $cidade, $tel, $email, $senha, $nascimento, $ImgDestino, $camiseta, $calca, $calcado);
 			if($cadastro2){
 				header("location: sucesso.php");
 			}else{

@@ -9,13 +9,13 @@
 		return $conexao;
 	}
 
-	function insert($ImgDestino){
-		$conexao = getConexao();
-		$sql = "INSERT INTO Usuario(CaminhoImg)
-		VALUES ('$ImgDestino')";
-		mysqli_query($conexao, $sql);
-		mysqli_close($conexao);
-	}
+	// function insert($ImgDestino){
+	// 	$conexao = getConexao();
+	// 	$sql = "INSERT INTO Usuario(CaminhoImg)
+	// 	VALUES ('$ImgDestino')";
+	// 	mysqli_query($conexao, $sql);
+	// 	mysqli_close($conexao);
+	// }
 
 	// function readTeste(){
 	// 	$conexao = getConexao();

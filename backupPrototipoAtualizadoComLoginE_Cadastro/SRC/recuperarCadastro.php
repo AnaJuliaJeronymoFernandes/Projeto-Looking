@@ -28,7 +28,7 @@
             $_SESSION["email"] = $email;
             $_SESSION["senha"] = $senha;
 
-            $cadastro1 = array($conexao, $nome, $sobrenome, $cpf, $cidade, $tel, $email, $senha);
+            $cadastro1 = cadastrar_usuario($conexao, $nome, $sobrenome, $cpf, $cidade, $tel, $email, $senha, $nascimento, $ImgDestino, $camiseta, $calca, $calcado);
         }
         
 
