@@ -3,13 +3,10 @@
         session_start();
     }
 
-    require("conexao.php");ssssssssss
+    require("conexao.php");
     require("operacoes.php");
     
-    //dados do cadastro2.php
     $nascimento = $_POST["nascimento"];
-    //$genero = $_POST["genero"];
-    //$imgpreview = $_POST["imgpreview"];
     $camiseta = $_POST["camiseta"];
     $calca = $_POST["calca"];
     $calcado = $_POST["calcado"];
@@ -31,15 +28,13 @@
         }
     }
     
-
-    //
-    if(!empty($nascimento)  && !empty($camiseta) && !empty($calca) && !empty($calcado)){
+    if(!empty($nascimento)  && !empty($ImgDestino) && !empty($camiseta) && !empty($calca) && !empty($calcado)){
 
         $conexao = getConexao();
 		
 		if($conexao){
 
-            //dados do cadastro2.php
+            //dados do cadastro.php
             $nome = $_SESSION["nome"];
             $sobrenome = $_SESSION["sobrenome"];
             $cpf = $_SESSION["cpf"];
@@ -47,17 +42,23 @@
             $tel = $_SESSION["tel"];
             $email = $_SESSION["email"];
             $senha = $_SESSION["senha"];
-            $ImgDestino = $_SESSION["ImgDestino"];
+
+            //dados do cadastro2.php
+            $_SESSION["nascimento"] = $nascimento;
+            $_SESSION["ImgDestino"] = $ImgDestino;
+            $_SESSION["camiseta"] = $camiseta;
+            $_SESSION["calca"] = $calca;
+            $_SESSION["calcado"] = $calcado;
 
 
-			$cadastro = cadastrar_usuario($conexao, $nascimento, $camiseta, $calca, $calcado, $nome, $sobrenome, $cpf, $cidade, $tel, $email, $senha, $ImgDestino);//colocar nascimento também
-			if($cadastro){
+			$cadastro2 = array($conexao, $nascimento, $ImgDestino, $camiseta, $calca, $calcado);
+			if($cadastro2){
 				header("location: sucesso.php");
 			}else{
 				header("location: erro.php");
 			}
 		}else{
-			$erroConexao = mysqli_connect_error($conexao);
+			$erroConexao = mysqli_connect_error();
 			echo "Houve um erro na conexão do php com o banco de dados: " . $erroConexao;
 		}
 	}else{

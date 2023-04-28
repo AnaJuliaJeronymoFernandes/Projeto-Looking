@@ -1,17 +1,10 @@
 <?php
-
-/* session_start();
-if(!isset($_SESSION["cpf"])) {
-    header("location: ../public/index.html");
-    die();
-} */
-
-/* if(session!=null){
-} */
-    
     if(!isset($_SESSION["cpf"])) {
         session_start();
     }
+
+    require("conexao.php");
+    require("operacoes.php");
 
     $nome = $_POST["nome"];
     $sobrenome = $_POST["sobrenome"];
@@ -22,15 +15,22 @@ if(!isset($_SESSION["cpf"])) {
     $senha = $_POST["senha"];
 
 
-    if(!empty(trim($nome)) && !empty(trim($sobrenome)) && !empty(trim($cpf)) && !empty(trim($cidade)) && !empty(trim($tel)) && !empty(trim($email)) && !empty(trim($senha))){
+    if(!empty($nome) && !empty($sobrenome) && !empty($cpf) && !empty($cidade) && !empty($tel) && !empty($email) && !empty($senha)){
 
-        $_SESSION["nome"] = $_POST["nome"];
-        $_SESSION["sobrenome"] = $_POST["sobrenome"];
-        $_SESSION["cpf"] = $_POST["cpf"];
-        $_SESSION["cidade"] = $_POST["cidade"];
-        $_SESSION["tel"] = $_POST["tel"];
-        $_SESSION["email"] = $_POST["email"];
-        $_SESSION["senha"] = $_POST["senha"];
+        $conexao = getConexao();
+
+        if($conexao){
+            $_SESSION["nome"] = $nome;
+            $_SESSION["sobrenome"] = $sobrenome;
+            $_SESSION["cpf"] = $cpf;
+            $_SESSION["cidade"] = $cidade;
+            $_SESSION["tel"] = $tel;
+            $_SESSION["email"] = $email;
+            $_SESSION["senha"] = $senha;
+
+            $cadastro1 = array($conexao, $nome, $sobrenome, $cpf, $cidade, $tel, $email, $senha);
+        }
+        
 
         header("location: cadastro2.php");
 
