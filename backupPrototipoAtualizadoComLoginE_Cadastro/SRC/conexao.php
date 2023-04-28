@@ -17,18 +17,18 @@
 		mysqli_close($conexao);
 	}
 
-	function readTeste(){
-		$conexao = getConexao();
-		$sql = "SELECT id, caminho_img from teste";
-		$result = mysqli_query($conexao,$sql);
-		$linhas = array();
+	// function readTeste(){
+	// 	$conexao = getConexao();
+	// 	$sql = "SELECT id, caminho_img from teste";
+	// 	$result = mysqli_query($conexao,$sql);
+	// 	$linhas = array();
 	
-		while($row = mysqli_fetch_assoc($result)){
-			array_push($linhas, $row);
-		}
+	// 	while($row = mysqli_fetch_assoc($result)){
+	// 		array_push($linhas, $row);
+	// 	}
 	
-		mysqli_close($conexao);
+	// 	mysqli_close($conexao);
 	
-		return $linhas;
-	}
+	// 	return $linhas;
+	// }
 ?>
