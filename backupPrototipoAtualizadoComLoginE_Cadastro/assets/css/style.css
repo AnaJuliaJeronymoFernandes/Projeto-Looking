@@ -784,7 +784,7 @@ main{
 
 /*-----INÍCIO-----*/
 .inicio{
-    /* background-color: #F5F5F5; */
+    /* background-color: #d92424; */
     background-image: url("../img/planta_verde_escura.jpg");
 }
 
@@ -948,7 +948,7 @@ main{
 
 /* FEED */
 
-#feed {
+/* #feed {
     width: 100%;
     height: auto;
     display: flex;
@@ -956,7 +956,9 @@ main{
 
     align-items: center;
     justify-content: center;
-}
+
+    background-image: url("../img/planta_verde_escura.jpg");
+} */
 
 .post {
     width: 35%;
