@@ -784,7 +784,8 @@ main{
 
 /*-----INÍCIO-----*/
 .inicio{
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
+    background-image: url("../img/planta_verde_escura.jpg");
 }
 
 .logado .navbar{
