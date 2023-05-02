@@ -15,4 +15,19 @@
 
 		return $resultadoInsercao;	
 	}
+
+	function readImg(){
+		$conexao = getConexao();
+		$sql = "SELECT CaminhoImg from Usuario";
+		$result = mysqli_query($conexao, $sql);
+		// $linhas = array();
+	
+		// while($row = mysqli_fetch_assoc($result)){
+		// 	array_push($linhas, $row);
+		// }
+	
+		mysqli_close($conexao);
+	
+		return $result;
+	}
 ?>

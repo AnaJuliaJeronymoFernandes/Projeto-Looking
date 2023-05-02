@@ -19,12 +19,18 @@
 <body class="inicio">
 <?php
         include ("../include/cabecalhoMenu.php");
+        
+        include("conexao.php");
+        include("operacoes.php");
+        // $ler_imagem = readImg();
     ?>
     
     <main class="inicio">
         <div class="sidebar ajeitaSidebar">
             <div class="conteudo">
-            <img src="../assets/img/Bruna.jpg" class="image" alt="">
+                <!-- ../assets/img/Bruna.jpg -->
+                
+            <img src="<?php readImg() ?>" class="image" alt="">
             <h2>Bruna</h2>
             <a href="meuperfil.php"><span class="material-symbols-outlined">person</span>Perfil</a>
             <a href="favoritos.php"><span class="material-symbols-outlined">star</span>Favoritos</a>
