@@ -784,9 +784,7 @@ main{
 
 /*-----INÍCIO-----*/
 .inicio{
-    /* background-color: #d92424; */
     background-color: #0A671F;
-    /* background-image: url("../img/planta_verde_escura.jpg"); */
 }
 
 .logado .navbar{
@@ -851,7 +849,7 @@ main{
 }
 
 .search-box:hover{
-    background: #1b6283;
+    background: #22831b;
 }
 
 .search-text::placeholder{
@@ -1001,7 +999,7 @@ main{
 
 /* FEED */
 
-#feed {
+#feed{
     width: 100%;
     height: auto;
     display: flex;
@@ -1011,6 +1009,10 @@ main{
     justify-content: center;
 
     background-image: url("../img/planta_verde_escura.jpg");
+}
+
+#planta_verde_escura{
+    opacity: 0.5;
 }
 
 .post {

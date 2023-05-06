@@ -42,7 +42,7 @@
     
     
         <div id="feed">
-
+            
             <!-- PRIMEIRO POST -->
             <div class="post">
                 <div class="post-header">
