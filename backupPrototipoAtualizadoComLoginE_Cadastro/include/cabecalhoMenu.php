@@ -12,8 +12,8 @@
                 </a>
             </div>
             <div class="search-box">
-                <input type="text" class="search-text" placeholder="Pesquisar...">
-                <a href="" class="search-btn">
+                <input type="text" name= "pesquisar" class="search-text" placeholder="Pesquisar...">
+                <a href="operacoes.php" class="search-btn">
                     <span class="material-symbols-outlined">search</span>
                 </a>
             </div>

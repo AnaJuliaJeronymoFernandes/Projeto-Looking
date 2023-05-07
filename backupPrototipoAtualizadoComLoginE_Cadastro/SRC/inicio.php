@@ -22,7 +22,7 @@
         
         include("conexao.php");
         include("operacoes.php");
-        // $ler_imagem = readImg();
+        readImg($linhaImg);
     ?>
     
     <main class="inicio">
@@ -30,7 +30,7 @@
             <div class="conteudo">
                 <!-- ../assets/img/Bruna.jpg -->
                 
-            <img src="" class="image" alt="">
+            <img src="<? $linhaImg ?>" class="image" alt="">
             <h2>Bruna</h2>
             <a href="meuperfil.php"><span class="material-symbols-outlined">person</span>Perfil</a>
             <a href="favoritos.php"><span class="material-symbols-outlined">star</span>Favoritos</a>

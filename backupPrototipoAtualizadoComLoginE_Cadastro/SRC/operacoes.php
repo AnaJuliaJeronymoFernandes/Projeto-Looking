@@ -18,23 +18,51 @@
 		return $resultadoInsercao;	
 	}
 
-	function readImg(){
+	function readImg($linhaImg){
 		$conexao = getConexao();
-		$sql = "SELECT CaminhoImg from Usuario WHERE CPF = cpf";
-
+		
 		if(!isset($_SESSION["cpf"])) {
 			session_start();
 		}
 
-		$result = mysqli_query($conexao, $sql);
-		$linhasImg = array("cpf");
-	
-		while($row = mysqli_fetch_assoc($result)){
-		 	array_push($linhasImg, $row);
+		$stmt = $conexao->prepare("SELECT CaminhoImg from Usuario WHERE CPF = cpf");
+		$stmt -> bind_param('cpf', $cpf);
+		$stmt -> execute();
+		$resultado = $stmt -> fetch();
+
+		$linhaImg = $resultado['CaminhoImg'];
+		echo "<img src= '.$linhaImg.'></img>";
+
+		return $linhaImg;
+
+	}
+
+	function buscarPeca($palavrachave, $caminhopeca, $donopeca, $fotodono, $tecido, $tamanho){
+		$conexao = getConexao();
+		$palavrachave = $_POST["pesquisar"];
+		$sql = "SELECT caminhopeca FROM Peca WHERE palavrachave = $palavrachave";
+		$sqldono = "SELECT donopeca FROM Peca WHERE palavrachave = $palavrachave";
+		$sqlfotodono = "SELECT imagemdonopeca FROM Peca WHERE palavrachave = $palavrachave";
+		$sqltecido = "SELECT tecido FROM Peca WHERE palavrachave = $palavrachave";
+		$sqltamanho = "SELECT tamanho FROM Peca WHERE palavrachave = $palavrachave";
+
+
+		$resultado = mysqli_query($conexao, $sql);
+
+		if($resultado == $palavrachave){
+			$caminhopeca = $sql;
+			$donopeca = $sqldono;
+			$fotodono = $sqlfotodono;
+			$tecido = $sqltecido;
+			$tamanho = $sqltamanho;
+
+			header("Location: resultadobusca.php");
+		}else{
+			echo "Não há resultados para '.$palavrachave.', tente outra palavra chave.";
+
 		}
-	
+		
 		mysqli_close($conexao);
-	
-		return $result;
+		// return $resultado;
 	}
 ?>
