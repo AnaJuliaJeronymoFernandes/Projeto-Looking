@@ -30,7 +30,7 @@
             <div class="conteudo">
                 <!-- ../assets/img/Bruna.jpg -->
                 
-            <img src="<?php readImg() ?>" class="image" alt="">
+            <img src="" class="image" alt="">
             <h2>Bruna</h2>
             <a href="meuperfil.php"><span class="material-symbols-outlined">person</span>Perfil</a>
             <a href="favoritos.php"><span class="material-symbols-outlined">star</span>Favoritos</a>

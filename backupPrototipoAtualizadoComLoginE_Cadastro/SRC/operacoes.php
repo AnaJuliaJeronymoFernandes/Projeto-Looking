@@ -1,4 +1,6 @@
 <?php
+	 require("conexao.php");
+	 require("operacoes.php");
 
 	//loja, imagem e genero ainda nao
 	function cadastrar_usuario($conexao, $nome, $sobrenome, $cpf, $cidade, $tel, $email, $senha, $nascimento, $ImgDestino, $camiseta, $calca, $calcado){
@@ -18,13 +20,18 @@
 
 	function readImg(){
 		$conexao = getConexao();
-		$sql = "SELECT CaminhoImg from Usuario";
+		$sql = "SELECT CaminhoImg from Usuario WHERE CPF = cpf";
+
+		if(!isset($_SESSION["cpf"])) {
+			session_start();
+		}
+
 		$result = mysqli_query($conexao, $sql);
-		// $linhas = array();
+		$linhasImg = array("cpf");
 	
-		// while($row = mysqli_fetch_assoc($result)){
-		// 	array_push($linhas, $row);
-		// }
+		while($row = mysqli_fetch_assoc($result)){
+		 	array_push($linhasImg, $row);
+		}
 	
 		mysqli_close($conexao);
 	
