@@ -9,29 +9,10 @@
     <title>Looking</title>
 </head>
 <body>
-    <header class="logado">
-        <nav class="navbar ajeitaNavBar">
-            <div class="iconemenu">
-                <input type="checkbox" id="check">
-                <label for="check">
-                <span class="material-symbols-outlined">menu</span>
-                </label>
-            </div>
-            <div class="navbar-logo">
-                <a href="inicio.php">
-                    <img src="../assets/img/LookingMenu.png" alt="Looking" class="logo">
-                </a>
-            </div>
-            <div class="pesquisa">
-                <form action="resultadobusca.html">
-                    <input type="text" name="pesquisa" placeholder="Buscar..."/>
-                    <button type="submit">
-                        <span class="material-symbols-outlined">search</span>
-                    </button>
-                </form>
-            </div>
-        </nav>
-    </header>
+    <?php
+        include ("../include/cabecalhoMenu.php");
+        require("operacoes.php");
+    ?>
     <main class="cadastropeca">
         <div class="sidebar ajeitaSidebar">
             <div class="conteudo">
@@ -91,8 +72,8 @@
                                 
                                 <div class="coluna2">
                         <div class="input-box">
-                            <label for="imgpreview">Imagem</label>
-                            <input type="file" id="imgpreview" name="imgpreview" accept="image/*"/>
+                            <label for="caminhopeca">Imagem</label>
+                            <input type="file" id="caminhopeca" name="caminhopeca" accept="image/*"/>
                         </div>
                         <div id="img-container">
                             <img id="preview" src="">
@@ -100,7 +81,7 @@
                     </div>
                     <div class="coluna3">
                     <div class="continue-button-peca">
-                        <button><a href="pecasucesso.php">Continuar</a></button>
+                        <button type= "submit">Continuar</button>
                     </div>
 </div>
                         </div>

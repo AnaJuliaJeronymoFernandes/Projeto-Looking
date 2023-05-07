@@ -11,48 +11,50 @@
 <body class="inicio">
     <?php
         include ("../include/cabecalhoMenu.php");
+        require("operacoes.php");
+        
+        buscarPeca($palavrachave, $caminhopeca, $donopeca, $fotodono, $tecido, $tamanho);
     ?>
+
         <div id="feed">
-            <h2>Resultados para "Bermuda"</h2>
+            <h2>Resultados para <? $palavrachave ?></h2>
             <div class="post">
                 <div class="post-header">
-                    <img src="../assets/img/Gabriel.jpg">
-                    <p>Gabriel Albino</p>
+                    <img src="<? $sqlfotodono ?>">
+                    <p><? $donopeca ?></p>
                     <ion-icon name="add-circle-outline"></ion-icon>
                 </div>
                 <div class="post-image">
-                    <img src="../assets/img/bermuda.jpg">
+                    <img src="<? $caminhopeca ?>">
                 </div>
                 <div class="post-footer">
                     <div class="post-description">
-                        <p>Bermuda cargo cinza</p>
+                        <p><? $palavrachave ?></p>
                         <div class="post-tag">
                             <ion-icon name="shirt-outline"></ion-icon>
-                            <p>Algodão</p>
+                            <p><? $tecido ?></p>
                         </div>
                         <div class="post-tag">
                             <ion-icon name="pricetag-outline"></ion-icon>
-                            <p>42</p>
+                            <p><? $tamanho ?></p>
                         </div>
                     </div>
                     <div class="post-actions">
-                        <ion-icon onclick="red_buscafavorito()" name="star-outline"></ion-icon>
+                        <!-- <ion-icon onclick="red_buscafavorito()" name="star-outline"></ion-icon> -->
                         <ion-icon name="chatbubbles-outline"></ion-icon>
                         <ion-icon name="arrow-redo-outline"></ion-icon>
                     </div>
                 </div>
             </div>
-        </div>
-            
+        </div> 
     </main>
 
-        
-        <script src="../assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
         
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 <?php
-        include("../include/rodape.php");
-    ?>
+    include("../include/rodape.php");
+?>
 </html>
