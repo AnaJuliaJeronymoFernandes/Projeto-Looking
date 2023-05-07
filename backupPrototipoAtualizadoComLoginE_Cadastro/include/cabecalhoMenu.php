@@ -1,3 +1,4 @@
+
 <header class="logado">
         <nav class="navbar ajeitaNavBar">
             <div class="iconemenu">
@@ -13,7 +14,7 @@
             </div>
             <div class="search-box">
                 <input type="text" name= "pesquisar" class="search-text" placeholder="Pesquisar...">
-                <a href="operacoes.php" class="search-btn">
+                <a href="irbuscar.php" class="search-btn">
                     <span class="material-symbols-outlined">search</span>
                 </a>
             </div>
